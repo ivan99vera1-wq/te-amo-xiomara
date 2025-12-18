@@ -70,7 +70,7 @@ p {
 setInterval(() => {
     const c = document.createElement("div");
     c.className = "heart";
-    c.innerText = "❤️";
+    c.innerText = "❤️🤎🩶";
     c.style.left = Math.random() * 100 + "vw";
     c.style.fontSize = (Math.random() * 20 + 15) + "px";
     document.body.appendChild(c);
