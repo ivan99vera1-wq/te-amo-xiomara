@@ -70,7 +70,7 @@ button {
 <body>
 
 <div class="contenedor">
-    <img src="foto.jpg" alt="Nuestra foto">
+    <img src="foto.jpg.JPG" alt="Nuestra foto">
     <h1>❤️ Te amo Xiomara ❤️</h1>
 
     <p>
