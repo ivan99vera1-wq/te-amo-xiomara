@@ -57,7 +57,7 @@ p {
 <body>
 
 <div class="contenedor">
-    <img src="foto.jpg">
+    <img src="foto.jpg.JPG">
     <h1>❤️ Te amo Xiomara ❤️</h1>
     <p>
         Este lugar existe solo para decirte  
