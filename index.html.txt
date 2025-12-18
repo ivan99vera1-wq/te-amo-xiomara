@@ -65,7 +65,7 @@
 <body>
 
     <div class="contenedor">
-        <img src="foto.jpg" alt="Foto especial">
+        <img src="foto.jpg.JPG" alt="Foto especial">
         <h1>❤️ Te amo Xiomara ❤️</h1>
         <p>
             Cada momento contigo es un regalo.  
