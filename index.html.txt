@@ -30,14 +30,27 @@ img {
     width: 100%;
     border-radius: 20px;
     margin-bottom: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 h1 {
     font-size: 2.4em;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.15em;
+}
+
+button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    background: #ff5f6d;
+    color: white;
+    cursor: pointer;
 }
 
 .heart {
@@ -57,25 +70,59 @@ p {
 <body>
 
 <div class="contenedor">
-    <img src="foto.jpg.JPG">
+    <img src="foto.jpg" alt="Nuestra foto">
     <h1>❤️ Te amo Xiomara ❤️</h1>
+
     <p>
-        Este lugar existe solo para decirte  
+        Este pequeño rincón existe solo para recordarte  
         lo importante que eres para mí  
         y lo mucho que te amo.
     </p>
+
+    <button id="playBtn">🎵 Tocar música</button>
+    <button onclick="alert('Eres lo mejor que me ha pasado ❤️')">
+        💌 Mensaje secreto
+    </button>
+
+    <p id="contador"></p>
 </div>
 
 <script>
+// 🎵 Música (requiere toque en iPhone)
+const audio = new Audio("música.mp3.mp3");
+document.getElementById("playBtn").onclick = () => {
+    audio.loop = true;
+    audio.play();
+};
+
+// 💖 Corazones flotando
 setInterval(() => {
     const c = document.createElement("div");
     c.className = "heart";
-    c.innerText = "❤️🤎🩶";
+    c.innerText = "❤️";
     c.style.left = Math.random() * 100 + "vw";
     c.style.fontSize = (Math.random() * 20 + 15) + "px";
     document.body.appendChild(c);
     setTimeout(() => c.remove(), 6000);
 }, 300);
+
+// 📅 Contador de días juntos (CAMBIA LA FECHA)
+const inicio = new Date("2024-01-01");
+const hoy = new Date();
+const dias = Math.floor((hoy - inicio) / (1000 * 60 * 60 * 24));
+document.getElementById("contador").innerText =
+`Llevamos ${dias} días juntos ❤️`;
+
+// 💕 Corazones al tocar pantalla
+document.addEventListener("click", e => {
+    const h = document.createElement("div");
+    h.innerText = "❤️";
+    h.style.position = "absolute";
+    h.style.left = e.pageX + "px";
+    h.style.top = e.pageY + "px";
+    document.body.appendChild(h);
+    setTimeout(() => h.remove(), 1000);
+});
 </script>
 
 </body>
