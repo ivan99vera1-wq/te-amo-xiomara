@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -71,7 +70,7 @@ button {
 <body>
 
 <div class="contenedor">
-    <img src="foto.jpg.JPG" alt="Nuestra foto">
+    <img src="foto.jpg" alt="Nuestra foto">
     <h1>❤️ Te amo Xiomara ❤️</h1>
 
     <p>
@@ -108,7 +107,7 @@ setInterval(() => {
 }, 300);
 
 // 📅 Contador de días juntos (CAMBIA LA FECHA)
-const inicio = new Date("2024-01-01");
+const inicio = new Date("2025-09-20");
 const hoy = new Date();
 const dias = Math.floor((hoy - inicio) / (1000 * 60 * 60 * 24));
 document.getElementById("contador").innerText =
